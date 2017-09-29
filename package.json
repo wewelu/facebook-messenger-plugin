@@ -1,0 +1,15 @@
+{
+  "name": "facebook-test",
+  "version": "1.0.0",
+  "description": "facebook checkboz plugin sample",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "pratiksinghchauhan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.5",
+    "jade": "^1.11.0"
+  }
+}

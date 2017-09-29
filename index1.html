@@ -1,0 +1,31 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.js"></script>
+
+<script>
+ window.fbAsyncInit = function () {
+    FB.init({
+      appId: 'MY_FACEBOOK_APP_ID',
+      xfbml: true,
+      version: 'v2.8'
+    });
+};
+(function (d, s, id) {
+   var js, fjs = d.getElementsByTagName(s)[0];
+   var fbElement = d.getElementById(id);
+   if (fbElement) {
+     return;
+   }
+   js = d.createElement(s);
+   js.id = id;
+   js.src = '//connect.facebook.net/en_US/sdk.js';
+   fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));
+</script>      
+      
+<div class="fb-messenger-checkbox"  
+  origin=https://f3c693a2.ngrok.io/
+  page_id=2204397273123993
+  messenger_app_id=104048930344970
+  user_ref="aa775555gg84a84457srrwrfghhjklggg" 
+  prechecked="true" 
+  allow_login="true" 
+  size="xlarge"></div>      
