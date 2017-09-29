@@ -6,7 +6,7 @@ html
   
 
   body
-           .fb-messenger-checkbox(origin="http://localhost:5000" , page_id="2204397273123993", messenger_app_id="104048930344970", user_ref="#{guid}"  ,prechecked="true" ,allow_login="true",size="large")
+           .fb-messenger-checkbox(origin="https://f3c693a2.ngrok.io/" , page_id=2204397273123993, messenger_app_id=104048930344970, user_ref="#{guid}"  ,prechecked="true" ,allow_login="true",size="large")
            input(type="button" onclick="confirmOptIn()" value="Confirm Opt-in")
 
 
@@ -18,7 +18,7 @@ script.
       FB.init({
         appId: '104048930344970',
         xfbml: true,
-        version: 'v2.6'
+        version: 'v2.8'
       });
 
       FB.Event.subscribe('messenger_checkbox', function (e) {
