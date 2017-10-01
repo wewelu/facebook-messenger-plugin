@@ -6,7 +6,7 @@ html
   
 
   body
-           .fb-messenger-checkbox(origin="https://f3c693a2.ngrok.io/" , page_id=2204397273123993, messenger_app_id=104048930344970, user_ref="#{guid}"  ,prechecked="true" ,allow_login="true",size="large")
+           .fb-messenger-checkbox(origin="https://050cf8e9.ngrok.io/" , page_id=2204397273123993, messenger_app_id=104048930344970, user_ref="#{guid}"  ,prechecked="true" ,allow_login="true",size="large")
            input(type="button" onclick="confirmOptIn()" value="Confirm Opt-in")
 
 
@@ -50,11 +50,12 @@ script.
     }(document, 'script', 'facebook-jssdk'));
 
     function confirmOptIn() {
+      console.log("confirm optin called")
+      console.log("#{guid}")
       FB.AppEvents.logEvent('MessengerCheckboxUserConfirmation', null, {
         'app_id': '104048930344970',
         'page_id': '2204397273123993',
-        'ref': 'insurance-company',
-
+        'user_ref': "#{guid}"
       });
     }
 
